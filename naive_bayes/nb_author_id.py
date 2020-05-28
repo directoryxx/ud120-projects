@@ -34,7 +34,7 @@ classifier.fit(features_train,labels_train)
 print "training time:", round(time()-t0, 3), "s"
 t0 = time()
 pred = classifier.predict(features_test)
-print "training time:", round(time()-t0, 3), "s"
+print "predict time:", round(time()-t0, 3), "s"
 from sklearn.metrics import accuracy_score
 accuracy = accuracy_score(pred, labels_test)
 print accuracy
